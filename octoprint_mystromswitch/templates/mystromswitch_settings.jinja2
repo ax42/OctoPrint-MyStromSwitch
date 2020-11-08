@@ -21,7 +21,7 @@
                 <input type="number" class="input-mini text-right" data-bind="value: settings.plugins.mystromswitch.intervall">
                 <span class="add-on">seconds</span>
             </div>
-            <span class="help-block"><small>{{ _('Intervall in seconds where relays state, power and energy consumption are refreshed') }}</small></span>
+            <span class="help-block"><small>{{ _('Interval in seconds where relays state, power and energy consumption are refreshed.') }}</small></span>
         </div>
     </div>
 
@@ -33,16 +33,16 @@
 			<label class="checkbox">
 		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.onOffButtonEnabled">Toggle Button Enabled
 			</label>
-			<span class="help-block"><small>{{ _('Shows an on/off Button on the left side to switch the relays on or off. This setting is only recommended if only your printer is switched on/off') }}</small></span>
+			<span class="help-block"><small>{{ _('Shows an on/off button on the left side to switch the relays on or off. This setting is only recommended if only your printer is switched on/off.') }}</small></span>
 		</div>
 	</div>
 
 	<div class="control-group">
 	    <div class="controls">
 			<label class="checkbox">
-		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.powerOnOnStart">Turn relais ON on Octoprint start
+		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.powerOnOnStart">Turn relay ON on Octoprint start
 			</label>
-		    <span class="help-block"><small>{{ _('This setting switches your mySwitch on if Octoprint is starting up. Turn relays OFF on Octoprint shutdown could also be interesting for you') }}</small></span>
+		    <span class="help-block"><small>{{ _('This setting switches your mySwitch on if Octoprint is starting up. Turn relays OFF on Octoprint shutdown could also be interesting for you.') }}</small></span>
 		</div>
 	</div>
 
@@ -52,20 +52,20 @@
 	<div class="control-group">
 	    <div class="controls">
 			<label class="checkbox">
-		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.powerOffOnShutdown">Turn relais OFF on Octoprint shutdown
+		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.powerOffOnShutdown">Turn relay OFF on Octoprint shutdown
 			</label>
 		    <span class="help-block"><small>{{ _('This setting switches your mySwitch off if Octoprint is shutting down. If your Raspberry Pi is also switched by the relays its recommended to use an turn relay off delay of 60 seconds or more. Keep in mind this switches also off if you restart Octoprint service!') }}</small></span>
 		</div>
 	</div>
 
 	<div class="control-group">
-        <label class="control-label">{{ _('Turn Relais Off Delay') }}</label>
+        <label class="control-label">{{ _('Turn Relay Off Delay') }}</label>
         <div class="controls">
             <div class="input-append">
                 <input type="number" class="input-block-level" data-bind="value: settings.plugins.mystromswitch.powerOffDelay">
                 <span class="add-on">seconds</span>
             </div>
-            <span class="help-block"><small>{{ _('Delay in seconds after octoprint is shutted down to switch off relays. This settings is recommended to make sure that Raspberry Pi is completely shutted down when you switch power off. Switching off when your Raspberry Pi is running could lead to unrepairable damage to your SD Card!') }}</small></span>
+            <span class="help-block"><small>{{ _('Delay in seconds after octoprint is shut down to switch off relays. This setting is recommended to make sure that Raspberry Pi is completely shut down when you switch power off. Switching power off while your Raspberry Pi is running could lead to irrepairable damage to your SD Card!') }}</small></span>
         </div>
     </div>
 
@@ -73,7 +73,7 @@
     <div class="control-group">
 	    <div class="controls">
 			<label class="checkbox">
-		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.rememberShutdown">remember Shutdown
+		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.rememberShutdown">Remember Shutdown
 			</label>
 		    <span class="help-block"><small>{{ _('Remember state of the checkboxes after reboot') }}</small></span>
 		</div>
@@ -82,18 +82,18 @@
     <div class="control-group">
 	    <div class="controls">
 			<label class="checkbox">
-		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.showShutdownOctopiOption">Show option to automatic shutdown Octoprint after Print is finished
+		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.showShutdownOctopiOption">Show option to automatically shutdown Octoprint after print is finished
 			</label>
-		    <span class="help-block"><small>{{ _('This setting shows the option to shut Octoprint down and switch your mySwitch off after your Print is finished. Use the "Delay after print is finished" option to determine after how many seconds Octoprint will be shutted down. After this use "Turn Relais Off Delay" to determine after how many seconds the Relas will be switched off') }}</small></span>
+		    <span class="help-block"><small>{{ _('This setting shows the option to shut down Octoprint and switch your mySwitch off after your print is finished. Use the "Delay after print is finished" option to set after how many seconds Octoprint will be shut down. After this use "Turn Relay Off Delay" to determine after how many seconds the relay will be switched off') }}</small></span>
 		</div>
 	</div>
 
 	<div class="control-group">
 	    <div class="controls">
 			<label class="checkbox">
-		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.showPowerOffPrintFinishOption">Show option to turn off Relais after Print is finished
+		    	<input type="checkbox" data-bind="checked: settings.plugins.mystromswitch.showPowerOffPrintFinishOption">Show option to turn off relay after print is finished.
 			</label>
-		    <span class="help-block"><small>{{ _('This setting shows the option to only switch your mySwitch off after your Print is finished. Use the "Delay after print is finished" Option to determine after how many seconds the Relais will switch off') }}</small></span>
+		    <span class="help-block"><small>{{ _('This setting shows the option to only switch your mySwitch off after your print is finished. Use the "Delay after print is finished" Option to determine after how many seconds the relay will switch off') }}</small></span>
 		</div>
 	</div>
 
