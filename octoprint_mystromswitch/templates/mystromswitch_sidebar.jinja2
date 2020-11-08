@@ -1,14 +1,14 @@
 <div class="sidebar_plugin_mystromswitch">
     <label class="control-label" id="mystromswitchPowerValue">Powerconsumption 0.0W</label>
     <label class="control-label" id="mystromswitchEnergyValue">Energy 0.0Wh</label>
-    <button class="btn btn-primary" data-bind="click: onToggleRelayEvent, visible : onOffButtonEnabled">{{ _('Toggle Relais') }}</button>
+    <button class="btn btn-primary" data-bind="click: onToggleRelayEvent, visible : onOffButtonEnabled">{{ _('Toggle Relay') }}</button>
     <label class="checkbox" data-bind="visible :showShutdownOctopiOption">
 		<input type="checkbox" data-bind="enable: loginState.isUser(), checked: automaticShutdownEnabled, visible :showShutdownOctopiOption">
-		{{ _('Shutdown Octoprint after print finished') }}
+		{{ _('Shutdown Octoprint after print finishes') }}
 	</label>
 
 	<label class="checkbox" data-bind="visible: showPowerOffPrintFinishOption">
 		<input type="checkbox" data-bind="enable: loginState.isUser(), checked: automaticPowerOffEnabled, visible: showPowerOffPrintFinishOption">
-		{{ _('Power Off Relais after print finished') }}
+		{{ _('Power off relay after print finishes') }}
 	</label>
 </div>
